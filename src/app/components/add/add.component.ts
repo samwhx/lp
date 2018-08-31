@@ -9,15 +9,6 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./add.component.css']
 })
 
-function validateImage(c: FormControl) {
-  let EMAIL_REGEXP = ...
-
-  return EMAIL_REGEXP.test(c.value) ? null : {
-    validateEmail: {
-      valid: false
-    }
-  };
-}
 export class AddComponent implements OnInit {
 
   @Output()
