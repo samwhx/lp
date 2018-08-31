@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgForm } from '@angular/forms';
+//custom calidators
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-add',
@@ -7,6 +9,15 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./add.component.css']
 })
 
+function validateImage(c: FormControl) {
+  let EMAIL_REGEXP = ...
+
+  return EMAIL_REGEXP.test(c.value) ? null : {
+    validateEmail: {
+      valid: false
+    }
+  };
+}
 export class AddComponent implements OnInit {
 
   @Output()
