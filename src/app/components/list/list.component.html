@@ -1,3 +1,12 @@
+<ul>
+    <div *ngIf="lpList.length <= 0">
+      <i>Your collection is empty</i>
+    </div>
+    <div *ngIf="lpList.length > 0">
+      <i>Your collection has {{lpList.length}} items(s)</i>
+    </div>
+  </ul>
+
 <div *ngFor ="let i of lpList; let n = index;">
   <mat-card style="margin:2em;">
     <mat-card-content fxLayout="row" fxLayoutAlign="space-between">
@@ -13,13 +22,3 @@
     </mat-card-content>
   </mat-card>
 </div>
-
-<ul>
-  <div *ngIf="lpList.length <= 0">
-    Your collection is empty
-  </div>
-  <div *ngIf="lpList.length > 0">
-    Your collection has {{lpList.length}} items(s)
-  </div>
-</ul>
-
