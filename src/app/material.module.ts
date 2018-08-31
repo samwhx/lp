@@ -9,6 +9,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatSliderModule} from '@angular/material/slider';
 
 //moment module for date-time
 import { MatMomentDateModule	} from '@angular/material-moment-adapter';
@@ -26,6 +27,7 @@ const MODULES = [
   MatDatepickerModule,
   MatButtonModule,
   MatIconModule,
+  MatSliderModule,
   //moment
   MatMomentDateModule,
   //flex

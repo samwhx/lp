@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lp';
+
+  lpList:string[] = [];
+
+  itemAdded(item:string) {
+    console.log('>>>> new item: ', item);
+    this.lpList.push(item);
+  }
 }
